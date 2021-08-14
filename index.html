@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Hand gesture app</title>
+  <title>Emotion To Emoji</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,42 +12,67 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <div class="container">
 
-        <center>
-    
-          <h3 class="btn btn-warning heading">Hand Gesture App
-            <br>
-            <span>&#128076;</span>
-            <span>&#128077;</span>
-            <span>&#128078;</span>
-            <span>&#x270c;</span>
-          </h3>
-          <br><br>
-<div class="col-md-4 col-sm-12 col-xs-12">
-            <label>Webcam View</label>
-            <div id="camera"></div>
-            <br><br>
-            <button class="btn btn-danger btnFont" onclick="take_snapshot()">Capture Image</button>
-            <br><br>
-          </div>
-    
-          <div class="col-md-4 col-sm-12 col-xs-12">
-            <label> Prediction  </label>
-            <p class="emotion_name" id="result_emotion_name"></p>
-            <p class="emoji" id="result_emoji"></p>
-    </div>
-          <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <label>Snapshot - </label>
-            <div id="result"></div>
-            <br><br>
-            <button onclick="check()" class="btn btn-danger btnFont">Predict Emotion</button>
-            <br><br>  
-          </div>
-    
-        </center>
-    
+<body>
+  <div class="container">
+
+    <center>
+
+      <h3 class="btn btn-warning heading">Emotion To Emoji App
+        <br>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+        <br>
+        <b style="color: green">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+        <b style="color:white">Are You Crying?</b>
+        <br>
+      </p>
+
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View</label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-danger btnFont" onclick="take_snapshot()">Capture Image</button>
+        <br><br>
       </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label> Prediction 1 </label>
+        <p class="emotion_name" id="result_emotion_name"></p>
+        <p class="emoji" id="result_emoji"></p>
+
+        <label>Prediction 2 </label>
+        <p class="emotion_name" id="result_emotion_name2"> </p>
+        <p class="emoji" id="result_emoji2"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check()" class="btn btn-primary btnFont">Predict Emotion</button>
+        <br><br>  
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
 </body>
+
 </html>
