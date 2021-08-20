@@ -1,7 +1,7 @@
 body
 {
   color: rgb(0, 0, 0);
-  background: #a6eb06;
+  background: #2faaf1;
 }
 span
 {
@@ -36,10 +36,11 @@ label{
   color:rgb(0, 0, 0);
   padding: 6px;
   border-radius:10px;
-  background-color: white;
+  background-color: rgb(8, 247, 227);
+  
 }
 label:hover{
-  background-color: rgb(8, 247, 227);
+  background-color: rgb(202, 101, 228);
 }
 .btnFont{
   font-size: 20px;
