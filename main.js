@@ -14,7 +14,7 @@ function take_snapshot() {
     });
 }
 console.log("ml5 version=" + ml5.version);
-classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/ymUuCEyq4/", modelLoaded);
+classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/ymUuCEyq4/model.json", modelLoaded);
 function modelLoaded() {
     console.log("model is loaded")
 }
@@ -42,7 +42,7 @@ function getResult(error,results){
         speak()
         if (Prediction1 == "Amazing") {
             document.getElementById("result_emoji").innerHTML = "&#128076;";
-    }
+
     if(Prediction1=="Best"){
         document.getElementById("result_emoji").innerHTML="&#128077";
     }
