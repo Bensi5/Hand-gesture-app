@@ -52,5 +52,6 @@ function getResult(error,results){
     if(Prediction1=="Victory"){
         document.getElementById("result_emoji").innerHTML="&#128078";
     }
-}
+        }
+    }
 }
